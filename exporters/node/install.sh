@@ -18,7 +18,4 @@ sudo cp system_config.conf /etc/systemd/system/node_exporter.service
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
 
-sudo systemctl status node_exporter
-
-
 sudo systemctl enable node_exporter
