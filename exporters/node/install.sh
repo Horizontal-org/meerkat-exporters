@@ -1,8 +1,5 @@
 # UBUNTU INSTALLATION
-
-# fetch 
-# cd /tmp
-curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz\
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
 
 # unpack 
 tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
