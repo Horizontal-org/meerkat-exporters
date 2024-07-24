@@ -1,10 +1,10 @@
 # UBUNTU INSTALLATION
-curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
 
 # unpack 
-tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
+tar xvfz node_exporter-1.8.2.linux-amd64.tar.gz
 
-sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin/
+sudo mv node_exporter-1.8.2.linux-amd64/node_exporter /usr/local/bin/
 
 # create custom user
 sudo useradd -rs /bin/false node_exporter
