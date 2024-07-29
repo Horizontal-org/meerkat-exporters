@@ -1,8 +1,8 @@
 # UBUNTU INSTALLATION
-wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
 
 # unpack 
-tar xvfz node_exporter-1.8.2.linux-amd64.tar.gz
+tar -xvf node_exporter-1.8.2.linux-amd64.tar.gz
 
 sudo mv node_exporter-1.8.2.linux-amd64/node_exporter /usr/local/bin/
 
