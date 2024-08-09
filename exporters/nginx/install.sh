@@ -10,8 +10,8 @@ sudo mv nginx-prometheus-exporter /usr/local/bin/
 sudo useradd -rs /bin/false nginx_exporter
 
 # copy services and socket to systemd
-sudo cp nginx-prometheus-exporter.service /etc/systemd/system/
-sudo cp nginx-prometheus-exporter.socket /etc/systemd/system/
+sudo cp nginx_exporter.service /etc/systemd/system/
+sudo cp nginx_exporter.socket /etc/systemd/system/
 
 sudo systemctl daemon-reload
 sudo systemctl start nginx_exporter
