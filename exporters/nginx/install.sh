@@ -1,6 +1,12 @@
 # UBUNTU INSTALLATION. Following instructions from https://github.com/nginxinc/nginx-prometheus-exporter/blob/main/examples/systemd/README.md
 curl -LO https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.3.0/nginx-prometheus-exporter_1.3.0_linux_amd64.tar.gz
 
+#Add stub metrics to nginx
+cp status.conf /etc/nginx/conf.d/
+
+#Restart nginx
+systemctl restart nginx
+
 # unpack 
 tar -xvf nginx-prometheus-exporter_1.3.0_linux_amd64.tar.gz
 
